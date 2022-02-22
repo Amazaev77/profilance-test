@@ -1,0 +1,31 @@
+.button {
+  background-color: #1890ff;
+  color: white;
+  min-width: 110px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 150ms;
+  &:active {
+    background-color: rgb(9, 115, 210);
+  }
+  &:disabled {
+    opacity: 0.6;
+    cursor: auto;
+    &:active {
+      background-color: #1890ff;
+    }
+  }
+  &__spinner {
+    display: inline-block;
+    position: relative;
+    img {
+      width: 18px;
+      position: absolute;
+      top: -12px;
+      left: 3px;
+    }
+  }
+}

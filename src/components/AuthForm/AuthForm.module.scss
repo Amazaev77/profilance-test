@@ -1,0 +1,24 @@
+.form {
+  &__title {
+    text-align: center;
+  }
+  &__label {
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.81);
+  }
+  &__input {
+    margin-bottom: 10px;
+  }
+  &__error-message {
+    color: red;
+    text-align: center;
+    font-size: 14px;
+    height: 14px;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+}

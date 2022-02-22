@@ -1,0 +1,20 @@
+.slow-transition {
+  &-enter {
+    z-index: 1000;
+    opacity: 0;
+    &-active {
+      z-index: 1000;
+      opacity: 1;
+      transition: opacity 300ms;
+    }
+  }
+  &-exit {
+    z-index: 1000;
+    opacity: 1;
+    &-active {
+      z-index: 1000;
+      opacity: 0;
+      transition: opacity 300ms;
+    }
+  }
+}

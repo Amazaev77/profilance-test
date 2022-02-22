@@ -1,0 +1,53 @@
+.header {
+  background-color: rgb(25, 118, 210);
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  &__logo {
+    flex: 0 0 20%;
+    margin-right: 6px;
+    @media screen and (max-width: 768px){
+      flex: 0 0 25%;
+    }
+    img {
+      width: 250px;
+      @media screen and (max-width: 768px){
+        width: 180px;
+      }
+    }
+  }
+  &__menu {
+    flex: 1;
+  }
+  .menu-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    &__link {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      cursor: pointer;
+      padding: 10px 12px;
+      border-radius: 4px;
+      transition: background-color 150ms;
+      margin-right: 10px;
+      &_active {
+        background-color: rgba(118,168,217,0.64);
+      }
+    }
+  }
+  &__login, &__logout {
+    flex: 0 0 15%;
+    span {
+      color: white;
+      font-weight: 500;
+      cursor: pointer;
+      float: right;
+      text-decoration: none;
+      border-bottom: 1px solid white;
+    }
+  }
+}

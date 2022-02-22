@@ -1,0 +1,21 @@
+.form {
+  &__title {
+    font-size: 22px;
+    text-align: center;
+    margin: 0 0 20px;
+  }
+  &__input {
+    margin-bottom: 10px;
+  }
+  &__button {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  &__error-message {
+    color: red;
+    text-align: center;
+    font-size: 14px;
+    height: 14px;
+  }
+}
